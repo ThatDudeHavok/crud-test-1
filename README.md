@@ -1,2 +1,2 @@
-# curd-test-1
+# crud-test-1
 practicing making a CRUD app
