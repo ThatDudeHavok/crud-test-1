@@ -10,7 +10,7 @@ post '/login' do
   if request.xhr?
   else
     @user = User.find_by(email: params[:email])
-    if @user && @user.save
+    if @user && @user.authenticate
       session[:user_id]
       redirect '/'
     else
