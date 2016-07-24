@@ -10,8 +10,8 @@ post '/login' do
   if request.xhr?
   else
     @user = User.find_by(email: params[:email])
-    if @user && @user.authenticate
-      session[:user_id]
+    if @user && @user.authenticate(params[:password])
+      session[:user_id] = @user.id
       redirect '/'
     else
       @errors = ['The most invalid credentials']
