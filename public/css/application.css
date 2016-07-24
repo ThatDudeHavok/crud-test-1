@@ -1,0 +1,10 @@
+.main-nav  {
+  height: 20px;
+}
+
+.main-nav ul {
+  /*Figure out how to center stuffs*/
+}
+.main-nav ul li {
+  display: inline-block;
+}
