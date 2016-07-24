@@ -1,1 +1,17 @@
+<!-- I am moving against using section and article
+here for a few reasons. First, a list of channels
+does not seem to fit semantically with section
+and article tags. Second, divs seems like a more
+fluid and approperiate to use. But, will this
+kind of exclude me from using section and
+tags in a spot that makes more semantic sense?
+The thought crossed my mind because I am kind
+of setting up a coding style by using a div
+tag here. -->
 
+<% @items.each do |item| %>
+  <div class="item">
+    <p class="item-name"><%=item.name%></p>
+    <p class="item-price"><%=item.price%></p>
+  </div>
+<% end %>
