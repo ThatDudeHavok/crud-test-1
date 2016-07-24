@@ -1,0 +1,9 @@
+<%= erb :'_errors', locals: { errors: @errors } %>
+
+<form class="" action="/users/new" method="post">
+  <label for="fname">First name: </label><input type="text" name="user[fname]">
+  <label for="fname">Last name: </label><input type="text" name="user[lname]">
+  <label for="email">email: </label><input type="email" name="user[email]">
+  <label for="password">password: </label><input type="password" name="user[password]">
+  <input type="submit" value="Create Account">
+</form>
